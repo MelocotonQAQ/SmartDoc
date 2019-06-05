@@ -1,5 +1,7 @@
 # Copyright (C) 2019 Hui Lan
-{see rq1}
+#{see rq1}
+#{see ra1}
+#{see tc1}
 def file2lst(fname):
     ''' Return a list where each element is a word from fname. '''
     L = []
@@ -15,8 +17,9 @@ def file2lst(fname):
 	
     f.close()
     return L
-
-{see rq2}
+#{see rq2}
+#{see ra2}
+#{see tc2}
 def lst2dict(lst):
     ''' Return a dictionary given list lst.  Each key is an element in the lst.
     The value is always 1.'''
@@ -27,7 +30,9 @@ def lst2dict(lst):
     return d
 
 
-{see rq3}
+#{see rq3}
+#{see ra3}
+#{see tc3}
 def word_frequency(fname, english_dictionary):
     ''' Return a dictionary where each key is a word both in the file fname and in 
     the dictionary english_dictionary, and the corresponding value is the frequency
@@ -44,7 +49,9 @@ def word_frequency(fname, english_dictionary):
                 d[x] += 1
     return d
 
-{see rq4}
+#{see rq4}
+#{see ra4}
+#{see tc4}
 def sort_by_value(d):
     ''' Return a sorted list of tuples, each tuple containing a key and a value.
         Note that the tuples are order in descending order of the value.'''
@@ -53,7 +60,9 @@ def sort_by_value(d):
     lst = sorted(d.items(), key=operator.itemgetter(1), reverse=True)    
     return lst
 
-{see rq5}
+#{see rq5}
+#{see ra5}
+#{see tc5}
 if __name__ == '__main__':
 		
     ed = lst2dict(file2lst('words.txt')) # from http://greenteapress.com/thinkpython2/code/words.txt
